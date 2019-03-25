@@ -1,0 +1,27 @@
+﻿<Window x:Class="FormForChangingParameters.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FormForChangingParameters"
+        mc:Ignorable="d"
+        Title="Genetic algorithm" Height="313.598" Width="439.235">
+    <Grid Margin="71,25,64,35">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="595*"/>
+            <ColumnDefinition Width="197*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock HorizontalAlignment="Left" Margin="40,51,0,0" TextWrapping="Wrap" Text="Iterations:" VerticalAlignment="Top" Width="66"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="170,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" Text="100" Grid.ColumnSpan="2" Name="Iterations" />
+
+        <TextBlock HorizontalAlignment="Left" Margin="40,100,0,0" TextWrapping="Wrap" Text="Cities" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="170,99,0,0" TextWrapping="Wrap" Text="20" VerticalAlignment="Top" Width="74" RenderTransformOrigin="2.435,0.345" Grid.ColumnSpan="2" 
+                 Name="Cities"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="40,142,0,0" TextWrapping="Wrap" Text="Mutation percentage" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="170,141,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="74" RenderTransformOrigin="2.435,0.345" Grid.ColumnSpan="2" 
+                 Name="Mutation"/>
+
+        <Button Content="Start" Background="DarkGray" Foreground="White" HorizontalAlignment="Left" Margin="96,197,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+    </Grid>
+</Window>
